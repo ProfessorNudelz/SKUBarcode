@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "SKUBarcode",
+  "version": "0.1",
+  "description": "Creates a barcode of the SKU for easy scanning",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.jbhifi.com.au/products/*", "http://www.jbhifi.com.au/products/*"
+      ],
+      "js": ["JsBarcode.code128.min.js", "content.js"]
+    }
+  ]
+}
